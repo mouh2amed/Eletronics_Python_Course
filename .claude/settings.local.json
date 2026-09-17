@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(py:*)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Read(//usr/**)",
+      "Bash(python3:*)",
+      "Bash(\"C:/Users/pred/AppData/Local/Programs/Python/Python313/python.exe\" -c \"\nimport json, os\n\nnb_dir = 'C:/Users/pred/Downloads/Eletronics_Python_Course/python-programming-course'\nerrors = []\nok = []\n\nfor root, dirs, files in os.walk\\(nb_dir\\):\n    for f in files:\n        if f.endswith\\('.ipynb'\\):\n            path = os.path.join\\(root, f\\)\n            try:\n                with open\\(path, 'r', encoding='utf-8'\\) as fh:\n                    nb = json.load\\(fh\\)\n                assert 'cells' in nb\n                assert nb.get\\('nbformat'\\) == 4\n                ok.append\\(f\\)\n            except Exception as e:\n                errors.append\\(f'{f}: {e}'\\)\n\nprint\\(f'Valid: {len\\(ok\\)}, Invalid: {len\\(errors\\)}'\\)\nif errors:\n    for e in errors: print\\('  ERROR:', e\\)\nelse:\n    print\\('All notebooks pass JSON validation.'\\)\nfor n in sorted\\(ok\\): print\\('  OK:', n\\)\n\" 2>&1)"
+    ]
+  }
+}

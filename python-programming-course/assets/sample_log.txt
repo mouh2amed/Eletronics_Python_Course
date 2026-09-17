@@ -1,0 +1,7 @@
+[2024-01-15 08:00:00] INFO  System started
+[2024-01-15 08:01:00] INFO  Sensor S1 connected
+[2024-01-15 08:01:05] INFO  Sensor S2 connected
+[2024-01-15 08:15:00] WARNING Sensor S2 reading out of range: -999.0
+[2024-01-15 08:16:00] ERROR  Failed to read S2: value below threshold
+[2024-01-15 08:30:00] INFO  Sensor S2 reconnected
+[2024-01-15 09:00:00] INFO  Data collection complete

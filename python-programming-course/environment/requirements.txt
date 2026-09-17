@@ -1,0 +1,19 @@
+# Python Programming Course — ELNI 5.5
+# Minimal dependency list for running all course notebooks
+# Install with: pip install -r requirements.txt
+
+# Jupyter environment
+notebook>=7.0
+jupyterlab>=4.0
+
+# Data handling (used in Chapters 3 and 5)
+# csv and os are part of the standard library — no extra install needed
+
+# Optional: code formatting inside notebooks
+black>=24.0
+
+# Optional: linting
+pyflakes>=3.0
+
+# Optional: nicer progress feedback in notebooks
+ipywidgets>=8.0

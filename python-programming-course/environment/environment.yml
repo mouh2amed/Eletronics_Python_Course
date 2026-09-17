@@ -1,0 +1,14 @@
+name: python-course
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - notebook>=7.0
+  - jupyterlab>=4.0
+  - black>=24.0
+  - pyflakes>=3.0
+  - ipywidgets>=8.0
+  - pip
+  - pip:
+      - pyflakes>=3.0
